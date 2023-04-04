@@ -1,11 +1,11 @@
-About des-montara
-=================
+About des-montara-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/des-montara-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/des-science/montara
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/des-montara-feedstock/blob/main/LICENSE.txt)
 
 Summary: package for simulating DES Y6 data
 
@@ -144,7 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@beckermr](https://github.com/beckermr/)
-
-
-<!-- dummy commit to enable rerendering -->
 
