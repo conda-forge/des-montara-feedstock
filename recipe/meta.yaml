@@ -1,5 +1,5 @@
 {% set name = "des-montara" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/des-science/montara/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 454d3df9904dc2ca4306dc4ee67c941fbf119daff8da3910db021f8e1146c08a
+  sha256: 02d1a24311367781c1c81b67d9f8e8a271b0429795f58b9110ea33b33932f3ac
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
