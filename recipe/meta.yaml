@@ -1,5 +1,5 @@
 {% set name = "des-montara" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/des-science/montara/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 949961168c6519e1c36f48678348fde08fd4fcf5558727a7cce2104f481ab172
+  sha256: ef578a795dfb2c9699fa1e159b5c9fcf7ab49addb8277cc38e3f2b917f7bea0e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -30,6 +30,7 @@ requirements:
     - galsim_extra
     - importlib_metadata
     - cfitsio
+    - lsstdesc-coord
 
 test:
   imports:
