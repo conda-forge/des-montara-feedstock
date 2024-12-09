@@ -11,17 +11,18 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - click
     - hpgeom
     - scipy
@@ -30,16 +31,18 @@ requirements:
     - galsim
     - fitsio
     - numpy
-    - astropy
+    - astropy-base
     - des-eastlake
     - galsim_extra
-    - importlib_metadata
+    - importlib-metadata
     - cfitsio
     - lsstdesc-coord
 
 test:
   imports:
     - montara
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/des-science/montara
