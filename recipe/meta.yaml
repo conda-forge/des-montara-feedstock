@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -30,7 +30,7 @@ requirements:
     - galsim
     - fitsio
     - numpy
-    - astropy
+    - astropy-base
     - des-eastlake
     - galsim_extra
     - importlib_metadata
